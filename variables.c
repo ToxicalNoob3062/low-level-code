@@ -27,5 +27,16 @@ int main()
     // define a pointer
     int *ptr = arr;
 
+    struct test3_reimagined
+    {
+        float a;    // 4 bytes
+        int num;    // 4 bytes
+        char c[10]; // 10 bytes
+        char b[10]; // 10 bytes
+    };
+
+    // print the size
+    printf("Size of struct: %zu\n", sizeof(struct test3_reimagined)); // 28 bytes (due to struct padding)
+
     return 0;
 }
