@@ -36,7 +36,7 @@ int main()
     printf("Result = %d\n", 6 < 5 ? 7 : 8);
 
     // assignment
-    //  14 -> /= , *= , %= , += , -= , <<= , >>= , &= , ^= , |= -> right to left
+    //  14 -> /= , *= , %= , += , -= , <<= , >>= , &= , ^= , |=  = -> right to left
     int a = 5;
     printf("Result 1 = %d\n", a += 6 < 5 ? 7 : a);
     printf("Result 2 = %d\n", a);

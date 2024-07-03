@@ -27,14 +27,14 @@ int main()
     // e or f format? -> convert the number into m*10^n form. (if n is >= precision or smaller than -4, then it will be converted into exponential form)
     double num = 0.0000567;
     double num2 = 1234857.178;
-    printf("num = %.2g\n", num); // 5.67e-5
-    printf("num2 = %g\n", num2); // 1.23457e+06
+    printf("num = %.2g\n", num); // 5.7e-5
+    printf("num2 = %g\n", num2); // 1.23486e+06
 
     //%f : (default precision = 6) and works on taking first n digits of precision but after decimal point and doesnt remove trailing zeros
     printf("num = %.3f\n", num); // 0.000
 
     //%e : (default precision = 6) and works on by converting the number into exponential form and takes first n digits of precision after
-    printf("num = %.2e\n", num); // 5.670e-05
+    printf("num = %.2e\n", num); // 5.67e-05
 
     // learning about length
 

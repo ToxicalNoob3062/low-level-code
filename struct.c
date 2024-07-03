@@ -23,6 +23,16 @@ int main()
     s1.roll = 1;
     s1.marks = 99.9;
 
+    // pointer to a structure
+    Student *sp = &s1;
+    sp->roll = 2;
+
     // defining a union variable
-    Choices c1;
+    Choices c1 = {.x = 10};
+
+    // make a pointer to a union
+    Choices *cp = &c1;
+
+    // access the union
+    cp->y = 10.5;
 }

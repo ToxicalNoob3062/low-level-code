@@ -4,7 +4,7 @@ int main()
 {
     // magnitude only bit model
     unsigned char a = (char)256;
-    printf("a = %d\n", a); // will overflow bit magnitude model (2^n-1) -> 256 % 256 = 0
+    printf("a = %d\n", a); // will overflow bit magnitude model (2^n)-1 -> 256 % 256 = 0
 
     // 2's complement bit model (signed) (-2^(n-1) to 2^(n-1)-1)
     signed char b = (char)128;
